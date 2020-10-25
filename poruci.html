@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Poruci</title>
+	<link rel="stylesheet" type="text/css" href="palete.css">
+
+</head>
+
+<body>
+	<div class="meni">
+		<ul>
+			<li><a href="index.html">Pocetna</a></li>
+			<li><a href="vrsta.html">Vrste paleta</a></li>
+			<li><a href="onama.html">O nama</a></li>
+			<li><a href="poruci.html">Poruči</a></li>
+		</ul>
+	</div>
+
+	<h1 class="h1">Poručite vaš proizvod!</h1>
+
+	<div class="div">
+		<form asd onSubmit="return proveriFormu()">
+			<label for="fname">Ime</label>
+			<input type="text" id="fname" onkeyup="skloniGresku(event)" name="Ime" placeholder="Vase ime..">
+
+			<label for="lname">Prezime</label>
+			<input type="text" id="lname" onkeyup="skloniGresku(event)" name="prezime" placeholder="Vase prezime..">
+
+			<label for="e-mail">Vas e-mail</label>
+			<input type="e-mail" id="e-mail" onkeyup="skloniGresku(event)" name="e-mail"
+				placeholder="mozis996@gmail.rs">
+
+			<label for="palete">Izbor paleta</label>
+			<select id="palete" name="palete">
+				<option value="Euro palete">Euro palete</option>
+				<option value="Ciglarske palete">Ciglarske palete</option>
+				<option value="Blok palete">Blok palete</option>
+				<option value="Boks palete">Boks palete</option>
+				<option value="Obične palete">Obične palete</option>
+				<option value="Namještaj palete">Namještaj palete</option>
+
+			</select>
+
+			<label for="country">Drzava</label>
+			<select id="country" name="Drzava">
+				<option value="Bosna i Hercegovina">Bosna i Hercegovina</option>
+				<option value="Srbija">Srbija</option>
+				<option value="Hrvatska">Hrvatska</option>
+				<option value="Crna Gora">Crna Gora</option>
+				<option value="Slovenija">Slovenija</option>
+				<option value="Makedonija">Makedonija</option>
+				<option value="Rumunija">Rumunija</option>
+				<option value="Madjarska">Madjarska</option>
+				<option value="Turska">Turska</option>
+				<option value="Italija">Italija</option>
+				<option value="Austrija">Austrija</option>
+			</select>
+
+			<input type="submit" value="Poruči" />
+		</form>
+	</div>
+	<div class="potvrdan_popup">
+		<div class="popup_text">
+			<div>Uspesno ste izvrsili narudzbinu. Vas zahtev ce biti pregledan i bicete kontaktirani u najkracem roku.
+			</div>
+			<div class="zatvori_popup" onclick="zatvoriPotvrdu()">OK</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
